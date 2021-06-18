@@ -18,7 +18,7 @@ myFunction();
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
 
-
+This feels like a bit of a trick question because when we invoke myFunction(), it takes us into the function of myFunction() on line 7. The myFunction() even though it has an "internal" variable, the function myFunction() console logging the variable external.  Because myFunction() doesn't have a variable called external, it references it's outer scope that returns "I'm outside the function. " As a result, nestedFunction() does not get invoked and the "internal" variable never passes through the function.   
 
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
