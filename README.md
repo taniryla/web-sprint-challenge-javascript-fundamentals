@@ -29,13 +29,40 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+
+.forEach() is best used for searching/looking up things and it does not return a new array. In contrast, .map() is best used for manipulating, altering and converting data; it returns a brand new array but not does alter the original array. 
+
+
 2. Explain the difference between a callback and a higher order function.
+
+
+A Higher Order Function is the receiver (of a function that is passed into another function) and the Callback Function is the function that is passing through into another function as an argument. 
+
 
 3. Can you explain what a closure is and how you used it in the counter function? 
 
+
+Closure means that the inner function always has access to the variables and parameters of its outer function (even after the outer function has returned). In the case of a counter that increses by 1, closure allows an inner function that is increasing the counter to gain access to the outer function and so the inner function for example can increase the outer function by 1. Furthermore, calling the inner function multiple times can keep increasing the counter incrementally by 1.
+
+
 4. Describe the four principles of the 'this' keyword.
 
+
+When 'this' does not have the proper reference point, it will return the window or global object in node (or be undefined in strict mode). This is called window binding and this is bad!!
+
+The 'this' key in 80% of the cases is used in implicit binding specifically in objects that use methods. The function MUST be invoked and in the object to the left of the dot (in dot notation) is what 'this' refers to.
+
+The third principle of 'this' is explicit binding which means that we explicitly tell a function exactly what 'this' refers to through .bind, .apply or .call. 
+
+Finally, in constructor functions, when the function is invoked with a "new" keyword... the 'this' will be bound to the new object being created. 
+
+
 5. Why do we need super() in an extended class?
+
+
+The 'super' keyword is part of the dynamic duo (with sidekick extend) that does the heavy lifting for accessing and calling functions on the object's parent. The 'extends' keyword tells super who the parent is (which is super important lol). 
+
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
